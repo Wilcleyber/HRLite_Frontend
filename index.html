@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRLite - Gestão de Colaboradores</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>HRLite - Cadastro de Colaboradores</h1>
+  </header>
+
+  <div id="mensagem" class="oculto"></div>
+
+  <section id="form-section">
+    <h2>Novo Colaborador</h2>
+    <form id="colaborador-form">
+      <input type="text" name="nome" placeholder="Nome completo" required />
+      <input type="text" name="cpf" placeholder="CPF (somente números)" required />
+      <input type="text" name="data_nascimento" placeholder="Data de nascimento (DD/MM/AAAA)" required />
+      <input type="text" name="telefone" placeholder="Telefone" required />
+      <input type="text" name="endereco" placeholder="Endereço" required />
+      <input type="text" name="cargo" placeholder="Cargo" required />
+      <input type="number" name="salario" placeholder="Salário" required />
+      <select name="status">
+        <option value="Ativo">Ativo</option>
+        <option value="Inativo">Inativo</option>
+      </select>
+      <button type="submit">Cadastrar</button>
+      <div id="form-buttons">
+        <button type="submit" id="btn-submit">Modificar</button>
+        <button type="button" id="btn-cancel" style="display: none;">Cancelar</button>
+      </div>      
+    </form>
+  </section>
+
+  <section id="list-section">
+    <h2>Lista de Colaboradores</h2>
+    <div id="filtros">
+      <input type="text" id="campo-busca" placeholder="Buscar Nome, CPF..." />
+  
+      <select id="filtro-status">
+        <option value="">Todos</option>
+        <option value="Ativo">Ativos</option>
+        <option value="Inativo">Inativos</option>
+      </select>
+
+      <button id="btn-filtrar">Filtrar</button>
+    </div>
+    <table id="colaboradores-table">
+      <thead>
+        <tr>
+          <th>Matrícula</th>
+          <th>Nome</th>
+          <th>Cargo</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dados serão inseridos via JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
