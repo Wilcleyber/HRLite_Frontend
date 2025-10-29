@@ -14,7 +14,7 @@ Veja abaixo uma prévia do sistema em funcionamento:
 
 O frontend está hospedado via **GitHub Pages**:
 
-🔗 [Acesse aqui](https://SEU_USUARIO.github.io/HRLite-Frontend)
+🔗 [Acesse aqui](https://wilcleyber.github.io/HRLite_Frontend/)
 
 ⚠️ Nota: Caso a API demore alguns segundos para responder inicialmente, isso é normal. O Render utiliza um modo de hibernação para economizar recursos quando o serviço fica inativo, e o servidor precisa de alguns instantes para “acordar” na primeira carga.
 
