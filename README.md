@@ -8,7 +8,7 @@ Interface web para o sistema de gestão de colaboradores **HRLite**. Este projet
 
 Veja abaixo uma prévia do sistema em funcionamento:
 
-![Demonstração do sistema](Demo.gif)
+![Demonstração do sistema](Demo.png)
 
 ## 🚀 Acesse o sistema
 
